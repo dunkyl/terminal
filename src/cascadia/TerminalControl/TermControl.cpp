@@ -1097,9 +1097,7 @@ namespace winrt::Microsoft::Terminal::Control::implementation
         // We'll need this later, for PointerMoved events.
         _pointerPressedInBounds = true;
 
-<<<<<<< HEAD
         if (type == Windows::Devices::Input::PointerDeviceType::Touch)
-=======
                 _renderer->TriggerSelection();
             }
             else if (point.Properties().IsRightButtonPressed())
@@ -1116,7 +1114,6 @@ namespace winrt::Microsoft::Terminal::Control::implementation
             }
         }
         else if (ptr.PointerDeviceType() == Windows::Devices::Input::PointerDeviceType::Touch)
->>>>>>> feac03231 (remove)
         {
             const auto contactRect = point.Properties().ContactRect();
             auto anchor = til::point{ til::math::rounding, contactRect.X, contactRect.Y };
