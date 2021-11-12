@@ -1454,7 +1454,7 @@ namespace winrt::Microsoft::Terminal::Control::implementation
                 if (_settings.CopyOnSelect() || !_terminal->IsSelectionActive())
                 {
                     // CopyOnSelect right click always pastes
-                    PasteTextFromClipboard();
+                    //PasteTextFromClipboard();
                 }
                 else
                 {
